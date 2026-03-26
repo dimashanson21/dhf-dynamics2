@@ -20,7 +20,7 @@ export default function Navbar() {
         </div>
 
         {/* -menu desktop- */}
-        <div className="hidden md:flex gap-6 items-center">
+        <div className="hidden md:flex gap-6 items-center tracking-widest text-sm">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
 
