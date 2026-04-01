@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 
-export default function F22Page() {
+export default function BMP3Page() {
   return (
     <main className="relative h-screen w-full text-white overflow-hidden">
 
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{ backgroundImage: "url('/images/f22.jpg')" }}
+        style={{ backgroundImage: "url('/images/bmp3.jpg')" }}
       />
 
       <div className="absolute inset-0 bg-black/70" />
@@ -18,7 +18,7 @@ export default function F22Page() {
           <img src="/logo.png" className="h-10 hover:scale-105 transition" />
         </Link>
 
-        <Link href="/services/aerospace/air-superiority">
+        <Link href="/services/armored/ifv">
           ← BACK
         </Link>
       </div>
@@ -26,21 +26,20 @@ export default function F22Page() {
       <div className="relative z-10 h-full flex items-end px-10 pb-20">
         <div className="max-w-xl">
 
-          <h1 className="text-6xl font-bold mb-4">F-22 Raptor</h1>
+          <h1 className="text-6xl font-bold mb-4">BMP-3</h1>
 
           <p className="text-gray-300 mb-6">
-            The F-22 Raptor is a fifth-generation stealth fighter engineered
-            for unmatched air dominance through stealth, supercruise, and
-            advanced avionics integration.
+            The BMP-3 is an amphibious infantry fighting vehicle equipped
+            with heavy firepower and high mobility for diverse combat roles.
           </p>
 
           <div className="grid grid-cols-2 gap-6 text-sm mb-8">
-            <div><p className="text-gray-400">Max Speed</p><p>Mach 2.25</p></div>
-            <div><p className="text-gray-400">Range</p><p>2,960 km</p></div>
-            <div><p className="text-gray-400">Payload</p><p>8,200 lbs</p></div>
-            <div><p className="text-gray-400">Crew</p><p>1</p></div>
-            <div><p className="text-gray-400">Unit Cost</p><p>$150 Million</p></div>
-            <div><p className="text-gray-400">Availability</p><p>Restricted</p></div>
+            <div><p className="text-gray-400">Top Speed</p><p>70 km/h</p></div>
+            <div><p className="text-gray-400">Range</p><p>600 km</p></div>
+            <div><p className="text-gray-400">Main Armament</p><p>100mm + 30mm</p></div>
+            <div><p className="text-gray-400">Crew</p><p>3 + 7 troops</p></div>
+            <div><p className="text-gray-400">Unit Cost</p><p>$1–2 Million</p></div>
+            <div><p className="text-gray-400">Availability</p><p>Export Available</p></div>
           </div>
 
           <Link href="/order" className="px-8 py-3 border border-white hover:bg-white hover:text-black transition">

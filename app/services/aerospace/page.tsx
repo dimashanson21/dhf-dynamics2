@@ -49,25 +49,24 @@ export default function AerospacePage() {
 
       {/* DESCRIPTION */}
      <section className="min-h-[60vh] flex items-center px-10 bg-gradient-to-b from-black via-[#050505] to-[#0a0a0a]">
-  <div className="max-w-2xl">
-    <h2 className="text-3xl font-bold mb-4">
-      What We Deliver
-    </h2>
-    <p className="text-gray-300 leading-relaxed mb-4">
-      DHF Dynamics develops aerospace systems that ensure operational
-      superiority across multiple domains. From air dominance fighters
-      to mission-flexible multirole aircraft, our systems are engineered
-      for precision, adaptability, and survivability.
-    </p>
-    <p className="text-gray-300 leading-relaxed">
-      Our force multiplier platforms extend the reach and effectiveness
-      of allied forces, enabling real-time intelligence, aerial refueling,
-      and enhanced coordination across the battlefield.
-    </p>
-  </div>
+        <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold mb-4">
+            What We Deliver
+            </h2>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                    DHF Dynamics develops aerospace systems that ensure operational
+                    superiority across multiple domains. From air dominance fighters
+                    to mission-flexible multirole aircraft, our systems are engineered
+                    for precision, adaptability, and survivability.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                    Our force multiplier platforms extend the reach and effectiveness
+                    of allied forces, enabling real-time intelligence, aerial refueling,
+                    and enhanced coordination across the battlefield.
+                </p>
+        </div>
 </section>
 
-<div className="h-px w-full bg-white/5" />
 
       {/* CATEGORY CARDS */}
       <section className="min-h-screen flex flex-col justify-center px-10 bg-gradient-to-b from-[#0a0a0a] via-[#111] to-black">

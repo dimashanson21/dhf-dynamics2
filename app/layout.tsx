@@ -1,13 +1,11 @@
 import "./globals.css";
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
 import { Orbitron } from "next/font/google";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
-
-<body className={orbitron.className}></body>
 
 export default function RootLayout({
   children,
@@ -16,9 +14,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${orbitron.className} bg-black text-white`}>
+
+        {/* NAVBAR */}
         <Navbar />
-        {children}
+
+        {/* MAIN WRAPPER */}
+        <main className="bg-gradient-to-b from-black via-[#0a0a0a] to-black min-h-screen">
+          {children}
+        </main>
+
       </body>
     </html>
   );

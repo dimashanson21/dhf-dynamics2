@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-black/70 backdrop-blur-md text-white border-b border-white/10">
-      
+
       <div className="flex items-center justify-between px-6 py-4">
 
         {/* LOGO */}
@@ -25,39 +25,58 @@ export default function Navbar() {
         {/* DESKTOP MENU */}
         <div className="hidden md:flex gap-8 items-center tracking-widest text-sm">
 
-          <Link className="hover:text-gray-300 transition" href="/">Home</Link>
-          <Link className="hover:text-gray-300 transition" href="/about">About</Link>
+          <Link href="/" className="hover:text-gray-300 transition">
+            Home
+          </Link>
 
-          {/* SERVICES DROPDOWN */}
-            <div className="relative group">
-            <span className="cursor-pointer hover:text-gray-300 transition">
+          <Link href="/about" className="hover:text-gray-300 transition">
+            About
+          </Link>
+
+          {/* SERVICES (CLICKABLE + DROPDOWN) */}
+          <div className="relative group">
+
+            {/* CLICKABLE */}
+            <Link
+              href="/services"
+              className="hover:text-gray-300 transition"
+            >
               Services
-            </span>
+            </Link>
 
-          {/* invisible hover bridge */}
+            {/* HOVER BRIDGE */}
             <div className="absolute top-full left-0 w-full h-3"></div>
 
-            <div className="absolute right-0 top-full mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200
-                  bg-black/90 backdrop-blur-md border border-white/10 
-                  p-4 rounded-lg shadow-lg min-w-[180px] z-50">
+            {/* DROPDOWN */}
+            <div className="absolute right-0 top-full mt-2 opacity-0 invisible 
+                            group-hover:opacity-100 group-hover:visible 
+                            transition duration-200
+                            bg-black/90 backdrop-blur-md border border-white/10 
+                            p-4 rounded-lg shadow-lg min-w-[180px] z-50">
 
-            <Link href="/services/aerospace" className="block py-1 hover:text-gray-300 transition">
-              Aerospace Systems
-            </Link>
+              <Link href="/services/aerospace" className="block py-1 hover:text-gray-300 transition">
+                Aerospace Systems
+              </Link>
 
-            <Link href="/services/armored" className="block py-1 hover:text-gray-300 transition">
-              Armored Systems
-            </Link>
+              <Link href="/services/armored" className="block py-1 hover:text-gray-300 transition">
+                Armored Systems
+              </Link>
 
-            <Link href="/services/weapons" className="block py-1 hover:text-gray-300 transition">
-              Weapon Systems
-            </Link>
+              <Link href="/services/weapons" className="block py-1 hover:text-gray-300 transition">
+                Weapon Systems
+              </Link>
 
             </div>
           </div>
 
-          <Link className="hover:text-gray-300 transition" href="/partners">Partners</Link>
-          <Link className="hover:text-gray-300 transition" href="/newsroom">Newsroom</Link>
+          <Link href="/partners" className="hover:text-gray-300 transition">
+            Partners
+          </Link>
+
+          <Link href="/newsroom" className="hover:text-gray-300 transition">
+            Newsroom
+          </Link>
+
         </div>
 
         {/* MOBILE TOGGLE */}
@@ -92,6 +111,7 @@ export default function Navbar() {
           <Link onClick={() => setOpen(false)} href="/newsroom" className="block hover:text-gray-300">
             Newsroom
           </Link>
+
         </div>
       )}
     </nav>
