@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: transparent; /* IMPORTANT */
   --foreground: #171717;
 }
 
@@ -14,13 +14,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: transparent; /* IMPORTANT */
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
+  background: transparent; /* <-- THIS is the key fix */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
