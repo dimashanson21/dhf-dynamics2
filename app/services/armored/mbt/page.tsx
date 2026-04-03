@@ -30,7 +30,7 @@ export default function MBTPage() {
       {/* HERO */}
       <section className="h-[60vh] relative flex items-end px-10 pb-16">
         <img
-          src="/images/mbt-hero.jpg"
+          src="/images/abrams.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/70" />

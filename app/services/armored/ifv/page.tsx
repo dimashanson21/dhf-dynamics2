@@ -7,7 +7,7 @@ export default function IFVPage() {
     {
       name: "M2A3 Bradley",
       role: "Infantry fighting vehicle with advanced targeting systems",
-      img: "/images/bradley.jpg",
+      img: "/images/cap2.jpg",
       link: "/products/bradley",
     },
     {
@@ -30,7 +30,7 @@ export default function IFVPage() {
       {/* HERO */}
       <section className="h-[60vh] relative flex items-end px-10 pb-16">
         <img
-          src="/images/ifv-hero.jpg"
+          src="/images/bmp3.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/70" />

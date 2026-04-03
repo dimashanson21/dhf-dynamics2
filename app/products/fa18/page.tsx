@@ -7,7 +7,7 @@ export default function FA18Page() {
     <main className="relative h-screen w-full text-white overflow-hidden">
 
       <div className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{ backgroundImage: "url('/images/fa18.jpg')" }}
+        style={{ backgroundImage: "url('/images/multirole.jpg')" }}
       />
 
       <div className="absolute inset-0 bg-black/70" />

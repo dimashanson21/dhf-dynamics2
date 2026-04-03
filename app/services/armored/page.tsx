@@ -7,22 +7,22 @@ export default function ArmoredPage() {
     {
       title: "Main Battle Tanks (MBT)",
       link: "/services/armored/mbt",
-      img: "/images/mbt.jpg",
+      img: "/images/abrams.jpg",
     },
     {
       title: "Infantry Fighting Vehicles (IFV)",
       link: "/services/armored/ifv",
-      img: "/images/ifv.jpg",
+      img: "/images/puma.jpg",
     },
     {
       title: "Armored Personnel Carriers (APC)",
       link: "/services/armored/apc",
-      img: "/images/apc.jpg",
+      img: "/images/stryker.jpg",
     },
     {
       title: "Self-Propelled Guns (SPG)",
       link: "/services/armored/spg",
-      img: "/images/spg.jpg",
+      img: "/images/m109.jpg",
     },
   ];
 

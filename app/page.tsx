@@ -87,7 +87,7 @@ export default function Home() {
 
   <div className="grid md:grid-cols-3 gap-8">
     {[
-      { title: "Aerospace Systems", img: "images/cap1.jpg", link: "/services/aerospace" },
+      { title: "Aerospace Systems", img: "images/multirole.jpg", link: "/services/aerospace" },
       { title: "Armored Systems", img: "images/cap2.jpg", link: "/services/armored" },
       { title: "Weapon Systems", img: "images/cap3.jpg", link: "/services/weapons" },
     ].map((item) => (

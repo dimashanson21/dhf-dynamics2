@@ -7,7 +7,7 @@ export default function F16Page() {
     <main className="relative h-screen w-full text-white overflow-hidden">
 
       <div className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{ backgroundImage: "url('/images/f16.jpg')" }}
+        style={{ backgroundImage: "url('/images/multirole-hero.jpg')" }}
       />
 
       <div className="absolute inset-0 bg-black/70" />

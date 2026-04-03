@@ -29,7 +29,7 @@ export default function APCPage() {
 
       {/* HERO */}
       <section className="h-[60vh] relative flex items-end px-10 pb-16">
-        <img src="/images/apc-hero.jpg" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/images/btr80.jpg" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/70" />
 
         <div className="relative z-10 max-w-xl">

@@ -33,21 +33,15 @@ export default function Navbar() {
             About
           </Link>
 
-          {/* SERVICES (CLICKABLE + DROPDOWN) */}
+          {/* SERVICES DROPDOWN */}
           <div className="relative group">
 
-            {/* CLICKABLE */}
-            <Link
-              href="/services"
-              className="hover:text-gray-300 transition"
-            >
+            <Link href="/services" className="hover:text-gray-300 transition">
               Services
             </Link>
 
-            {/* HOVER BRIDGE */}
             <div className="absolute top-full left-0 w-full h-3"></div>
 
-            {/* DROPDOWN */}
             <div className="absolute right-0 top-full mt-2 opacity-0 invisible 
                             group-hover:opacity-100 group-hover:visible 
                             transition duration-200

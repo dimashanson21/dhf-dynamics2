@@ -7,13 +7,13 @@ export default function MultirolePage() {
     {
       name: "F-16 Fighting Falcon",
       role: "Lightweight multirole fighter",
-      img: "/images/f16.jpg",
+      img: "/images/multirole-hero.jpg",
       link: "/products/f16",
     },
     {
       name: "F/A-18 Super Hornet",
       role: "Carrier-capable multirole platform",
-      img: "/images/fa18.jpg",
+      img: "/images/multirole.jpg",
       link: "/products/fa18",
     },
     {

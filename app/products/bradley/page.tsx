@@ -8,7 +8,7 @@ export default function BradleyPage() {
 
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{ backgroundImage: "url('/images/bradley.jpg')" }}
+        style={{ backgroundImage: "url('/images/cap2.jpg')" }}
       />
 
       <div className="absolute inset-0 bg-black/70" />

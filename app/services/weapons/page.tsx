@@ -8,13 +8,13 @@ export default function WeaponsPage() {
       title: "Ordnance Systems",
       desc: "Precision-guided munitions and advanced strike payloads.",
       link: "/services/weapons/ordnance",
-      img: "/images/ordnance.jpg",
+      img: "/images/ordnance-hero.jpg"
     },
     {
       title: "Air Intercept Systems",
       desc: "Missile defense and aerial interception technologies.",
       link: "/services/weapons/intercept",
-      img: "/images/intercept.jpg",
+      img: "/images/intercept.avif",
     },
     {
       title: "Radar & Sensor Systems",

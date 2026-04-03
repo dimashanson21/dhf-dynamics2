@@ -29,7 +29,7 @@ export default function SPGPage() {
 
       {/* HERO */}
       <section className="h-[60vh] relative flex items-end px-10 pb-16">
-        <img src="/images/spg-hero.jpg" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="/images/m109.jpg" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/70" />
 
         <div className="relative z-10 max-w-xl">
