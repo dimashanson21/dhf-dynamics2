@@ -44,11 +44,11 @@ export default function Home() {
 
   useEffect(() => {
     if (active >= data.length - baseData.length) {
-      setTimeout(() => scrollToIndex(baseData.length, false), 500);
-    }
-    if (active < baseData.length) {
-      setTimeout(() => scrollToIndex(baseData.length * 2 - 1, false), 500);
-    }
+  scrollToIndex(baseData.length, false);
+}
+if (active < baseData.length) {
+  scrollToIndex(baseData.length * 2 - 1, false);
+}
   }, [active]);
 
   const next = () => scrollToIndex(active + 1);
@@ -119,23 +119,35 @@ export default function Home() {
       {/* DEPLOYMENTS — IMAGE */}
       <section className="h-screen relative flex flex-col justify-center items-center">
         <img src="/images/deploy-bg.jpg" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
 
         <div className="relative z-10 w-full text-center">
           <h2 className="text-4xl font-bold mb-10">OPERATIONAL DEPLOYMENTS</h2>
 
-          <button onClick={prev} className="absolute left-6 z-20 bg-white/20 px-4 py-2 rounded-lg">
-            {"<"}
-          </button>
+          <button
+  onClick={prev}
+  className="absolute left-6 top-1/2 -translate-y-1/2 z-20 
+  bg-white/20 hover:bg-white/40 
+  w-12 h-12 flex items-center justify-center 
+  rounded-full text-xl backdrop-blur-md transition"
+>
+  {"<"}
+</button>
 
-          <button onClick={next} className="absolute right-6 z-20 bg-white/20 px-4 py-2 rounded-lg">
-            {">"}
-          </button>
+<button
+  onClick={next}
+  className="absolute right-6 top-1/2 -translate-y-1/2 z-20 
+  bg-white/20 hover:bg-white/40 
+  w-12 h-12 flex items-center justify-center 
+  rounded-full text-xl backdrop-blur-md transition"
+>
+  {">"}
+</button>
 
           <div ref={containerRef} className="flex gap-6 overflow-hidden w-full px-20">
             {data.map((item, index) => (
               <div
-                key={index}
+                key={item.title + "-" + index}
                 className={`min-w-[300px] h-64 rounded-xl overflow-hidden relative transition-transform duration-500
                 ${index === active ? "scale-110 z-10" : "scale-95 opacity-70"}`}
               >
@@ -166,9 +178,12 @@ export default function Home() {
             </div>
           ))}
 
-          <button className="ml-6 px-6 py-3 bg-white text-black rounded-lg hover:scale-105 transition">
+          <Link
+            href="/partners"
+            className="ml-6 px-6 py-3 bg-white text-black rounded-lg hover:scale-105 transition inline-block"
+              >
             See all..
-          </button>
+          </Link>
         </div>
       </section>
 
